@@ -13,7 +13,7 @@ import pipreqs as reqs
 st.title('Credit Default Prediction Application')
 st.text('Data Source:Kaggle and Project of ineuron.ai')
 st.markdown('This application is used to predict if a customer will default on a loan or not')
-df=pd.read_csv('/home/AhsenAliAsif/Desktop/Data Learning/ineuron.ai/Credit_Card_Default_Prediction/UCI_Credit_Card.csv')
+df=pd.read_csv('UCI_Credit_Card.csv')
 st.subheader('Initial Data sample')
 st.write(df.head(10))
 st.write('No of rows and columns in the dataset are respectively',df.shape)
