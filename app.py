@@ -229,7 +229,7 @@ try:
             input_dict={'LIMIT_BAL':limit, 'SEX':sex_chooser, 'EDUCATION':education_chooser, 'MARRIAGE':marriage_chooser, 'AGE':age, 'PAY_0':pay0_chooser, 'PAY_2':pay2_chooser,'PAY_3':pay3_chooser, 'PAY_4':pay4_chooser, 'PAY_5':pay5_chooser, 'PAY_6':pay6_chooser,'BILL_AMT1':bill_amt1,'BILL_AMT2':bill_amt2,'BILL_AMT3':bill_amt3,'BILL_AMT4':bill_amt4,'BILL_AMT5':bill_amt5,'BILL_AMT6':bill_amt6,'PAY_AMT1':pay_amt1,'PAY_AMT2':pay_amt2,'PAY_AMT3':pay_amt3,'PAY_AMT4':pay_amt4,'PAY_AMT5':pay_amt5,'PAY_AMT6':pay_amt6}
             prediction_df=pd.DataFrame([input_dict])
             model=pickle.load(open('credict_defualter_model.pkl','rb'))
-        else:
+       else:
             limit=np.log(limit)
             sex=st.sidebar.radio(label='Choose Sex Male or Female',options=['male','female'])
             sex_chooser=None
