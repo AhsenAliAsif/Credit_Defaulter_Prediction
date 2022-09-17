@@ -44,6 +44,7 @@ try:
         limit=st.sidebar.number_input(label='Amount of given credit in dollars (includes individual and family/supplementary credit',min_value=0,max_value=1000000,format='%d')
         if limit==0:
             limit=1
+            goto(49)
         else:
             limit=np.log(limit)
             sex=st.sidebar.radio(label='Choose Sex Male or Female',options=['male','female'])
