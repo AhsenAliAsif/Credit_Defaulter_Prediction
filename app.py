@@ -48,7 +48,7 @@ except:
     logging.error('Error in Model Building section maybe container not defined')
 try:
     with prediction:
-        st.text("Months ranging from (1-6).One is most recent previous month and Six is the oldest one")
+        st.sidebar.header("Months ranging from (1-6).One is most recent previous month and Six is the oldest one")
         limit=st.sidebar.number_input(label='Amount of given credit in dollars (includes individual and family/supplementary credit',min_value=0,max_value=1000000,format='%d')
         if limit==0:
             limit=1
