@@ -77,7 +77,7 @@ try:
         else:
             marriage_chooser=3
         age=st.sidebar.number_input(label='Age in years',min_value=20,max_value=60,format='%d')
-        pay0=st.sidebar.radio(label='Repayment status in September, 2005',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'])
+        pay0=st.sidebar.radio(label='Repayment status in Month 1',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'])
         pay0_chooser=None
         if pay0=='pay duly':
             pay0_chooser=0
@@ -101,7 +101,7 @@ try:
             pay0_chooser=9
         else:
             pay0_chooser=9
-        pay2=st.sidebar.radio(label='Repayment status in August, 2005',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'])
+        pay2=st.sidebar.radio(label='Repayment status Month 2',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'])
         pay2_chooser=None
         if pay2=='pay duly':
             pay2_chooser=0
@@ -125,7 +125,7 @@ try:
             pay2_chooser=9
         else:
             pay2_chooser=9
-        pay3=st.sidebar.radio(label='Repayment status in July, 2005',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'])
+        pay3=st.sidebar.radio(label='Repayment status Month 3,options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'])
         pay3_chooser=None
         if pay3=='pay duly':
             pay3_chooser=0
@@ -149,7 +149,7 @@ try:
             pay3_chooser=9
         else:
             pay3_chooser=9
-        pay4=st.sidebar.radio(label='Repayment status in June, 2005',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'])
+        pay4=st.sidebar.radio(label='Repayment status Month 4',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'])
         pay4_chooser=None
         if pay4=='pay duly':
             pay4_chooser=0
@@ -173,7 +173,7 @@ try:
             pay4_chooser=9
         else:
             pay4_chooser=9
-        pay5=st.sidebar.radio(label='Repayment status in May, 2005',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'])
+        pay5=st.sidebar.radio(label='Repayment status Month 5',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'])
         pay5_chooser=None
         if pay5=='pay duly':
             pay5_chooser=0
@@ -197,7 +197,7 @@ try:
             pay5_chooser=9
         else:
             pay5_chooser=9
-        pay6=st.sidebar.radio(label='Repayment status in April, 2005',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'],key=2)
+        pay6=st.sidebar.radio(label='Repayment status Month 6',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay and above'],key=2)
         pay6_chooser=None
         if pay6=='pay duly':
             pay6_chooser=0
@@ -221,18 +221,18 @@ try:
             pay6_chooser=9
         else:
             pay6_chooser=9
-        bill_amt1=st.sidebar.number_input(label=' Bill Amount  Statement  of month September',min_value=0,max_value=1000000,format='%d',value=0)
-        bill_amt2=st.sidebar.number_input(label=' Bill Amount  Statement  of month August',min_value=0,max_value=1000000,format='%d',value=0)
-        bill_amt3=st.sidebar.number_input(label=' Bill Amount  Statement  of month July',min_value=0,max_value=1000000,format='%d',value=0)
-        bill_amt4=st.sidebar.number_input(label=' Bill Amount  Statement  of month June',min_value=0,max_value=1000000,format='%d',value=0)
-        bill_amt5=st.sidebar.number_input(label=' Bill Amount  Statement  of month May',min_value=0,max_value=1000000,format='%d',value=0)
-        bill_amt6=st.sidebar.number_input(label=' Bill Amount  Statement  of month April',min_value=0,max_value=1000000,format='%d',value=0)
-        pay_amt1=st.sidebar.number_input(label=' Pay Amount  Statement  of month September',min_value=0,max_value=1000000,format='%d',value=0)
-        pay_amt2=st.sidebar.number_input(label=' Pay Amount  Statement  of month August',min_value=0,max_value=1000000,format='%d',value=0)
-        pay_amt3=st.sidebar.number_input(label=' Pay Amount  Statement  of month July',min_value=0,max_value=1000000,format='%d',value=0)
-        pay_amt4=st.sidebar.number_input(label=' Pay Amount  Statement  of month June',min_value=0,max_value=1000000,format='%d',value=0)
-        pay_amt5=st.sidebar.number_input(label=' Pay Amount  Statement  of month May',min_value=0,max_value=1000000,format='%d',value=0)
-        pay_amt6=st.sidebar.number_input(label=' Pay Amount  Statement  of month April',min_value=0,max_value=1000000,format='%d',value=0)
+        bill_amt1=st.sidebar.number_input(label=' Bill Amount  Statement  of month 1',min_value=0,max_value=1000000,format='%d',value=0)
+        bill_amt2=st.sidebar.number_input(label=' Bill Amount  Statement  of month 2',min_value=0,max_value=1000000,format='%d',value=0)
+        bill_amt3=st.sidebar.number_input(label=' Bill Amount  Statement  of month 3',min_value=0,max_value=1000000,format='%d',value=0)
+        bill_amt4=st.sidebar.number_input(label=' Bill Amount  Statement  of month 4',min_value=0,max_value=1000000,format='%d',value=0)
+        bill_amt5=st.sidebar.number_input(label=' Bill Amount  Statement  of month 5',min_value=0,max_value=1000000,format='%d',value=0)
+        bill_amt6=st.sidebar.number_input(label=' Bill Amount  Statement  of month 6',min_value=0,max_value=1000000,format='%d',value=0)
+        pay_amt1=st.sidebar.number_input(label=' Pay Amount  Statement  of month 1',min_value=0,max_value=1000000,format='%d',value=0)
+        pay_amt2=st.sidebar.number_input(label=' Pay Amount  Statement  of month 2',min_value=0,max_value=1000000,format='%d',value=0)
+        pay_amt3=st.sidebar.number_input(label=' Pay Amount  Statement  of month 3',min_value=0,max_value=1000000,format='%d',value=0)
+        pay_amt4=st.sidebar.number_input(label=' Pay Amount  Statement  of month 4',min_value=0,max_value=1000000,format='%d',value=0)
+        pay_amt5=st.sidebar.number_input(label=' Pay Amount  Statement  of month 5',min_value=0,max_value=1000000,format='%d',value=0)
+        pay_amt6=st.sidebar.number_input(label=' Pay Amount  Statement  of month 6',min_value=0,max_value=1000000,format='%d',value=0)
         input_dict={'LIMIT_BAL':limit, 'SEX':sex_chooser, 'EDUCATION':education_chooser, 'MARRIAGE':marriage_chooser, 'AGE':age, 'PAY_0':pay0_chooser, 'PAY_2':pay2_chooser,'PAY_3':pay3_chooser, 'PAY_4':pay4_chooser, 'PAY_5':pay5_chooser, 'PAY_6':pay6_chooser,'BILL_AMT1':bill_amt1,'BILL_AMT2':bill_amt2,'BILL_AMT3':bill_amt3,'BILL_AMT4':bill_amt4,'BILL_AMT5':bill_amt5,'BILL_AMT6':bill_amt6,'PAY_AMT1':pay_amt1,'PAY_AMT2':pay_amt2,'PAY_AMT3':pay_amt3,'PAY_AMT4':pay_amt4,'PAY_AMT5':pay_amt5,'PAY_AMT6':pay_amt6}
         prediction_df=pd.DataFrame([input_dict])
         model=pickle.load(open('credict_defualter_model.pkl','rb'))
