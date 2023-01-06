@@ -125,7 +125,7 @@ try:
             pay2_chooser=9
         else:
             pay2_chooser=9
-        pay3=st.sidebar.radio(label='Repayment status Month 3,options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay above'])
+        pay3=st.sidebar.radio(label='Repayment status Month 3',options=['pay duly','one month delay', 'two months delay','three months delay','four months delay','five months delay','six months delay','seven months delay','eight months delay','nine months delay above'])
         pay3_chooser=None
         if pay3=='pay duly':
             pay3_chooser=0
