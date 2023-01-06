@@ -11,7 +11,7 @@ logging.basicConfig(filename="logging_notebook.txt",filemode='a',format='%(ascti
 try:
 
     st.title('Credit Default Prediction Application')
-    st.text('Data Source:Kaggle and Project of ineuron.ai')
+    st.text('Data Source:Open Source Dataset from UCI-machine learning Repository')
     st.markdown('This application is used to predict if a customer will default on a loan or not')
     df=pd.read_csv('UCI_Credit_Card.csv')
     st.subheader('Initial Data sample')
